@@ -1,6 +1,6 @@
 /**
  * Firebase Configuration
- * Initialize Firebase Storage for the Valentine project
+ * Initialize Firebase Storage
  */
 
 (function () {

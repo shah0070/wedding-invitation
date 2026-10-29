@@ -21,7 +21,7 @@
       return Promise.resolve(null);
     }
 
-    var fullPath = 'client/valentine/' + clientName + '/' + assetPath;
+    var fullPath = 'client/' + clientName + '/' + assetPath;
     var cacheKey = fullPath;
 
     // Return cached URL if available
@@ -84,8 +84,8 @@
    * @returns {string|null} Client name or null
    */
   function getCurrentClientName() {
-    if (window.ValentineGlobal && window.ValentineGlobal.getClientFromPath) {
-      return window.ValentineGlobal.getClientFromPath();
+    if (window.SiteGlobal && window.SiteGlobal.getClientFromPath) {
+      return window.SiteGlobal.getClientFromPath();
     }
     // Fallback: try to get from pathname
     var path = (window.location.pathname || '').replace(/^\//, '').replace(/\/$/, '');

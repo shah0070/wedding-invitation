@@ -298,7 +298,7 @@
     var summary = couple + ' — ' + title;
     var eventBlock =
       'BEGIN:VEVENT\r\n' +
-      'UID:' + slug + '-wedding-' + formatIcsLocalDateTime(start) + '@mybeloved\r\n' +
+      'UID:' + slug + '-wedding-' + formatIcsLocalDateTime(start) + '@wedding-invite\r\n' +
       'DTSTAMP:' + stamp + '\r\n' +
       'DTSTART:' + formatIcsLocalDateTime(start) + '\r\n' +
       'DTEND:' + formatIcsLocalDateTime(end) + '\r\n' +
@@ -310,7 +310,7 @@
 
     return {
       content:
-        'BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//My Beloved//Wedding T2//EN\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\n' +
+        'BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Wedding Invite//EN\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\n' +
         eventBlock +
         '\r\nEND:VCALENDAR\r\n',
       filename: slug + '-wedding.ics'
