@@ -1110,7 +1110,7 @@ body {
   z-index: 4;
 }
 
-/* red-gAndb: bottom-left */
+/* Hero couple illustration: bottom-left */
 .wed2-hero-couple {
   position: absolute;
   bottom: -2.3vw;
@@ -1403,6 +1403,11 @@ body.wed2-ring-font-allura .wed2-ring-name {
   top: 0;
   left: 4%;
   text-align: left;
+}
+
+/* Groom name: break onto two lines inside the ring (hero only) */
+body.wed2-ring-font-allura .wed2-ring-name-groom {
+  white-space: pre-line;
 }
 
 .wed2-ring-name-bride {
@@ -2398,6 +2403,11 @@ body.wed2-general .wed2-details-greeting {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--wed2-red-soft);
+}
+
+.wed2-details-card .wed2-quote-text {
+  color: var(--wed2-text);
+  margin-bottom: 1.1rem;
 }
 
 .wed2-details-welcome {

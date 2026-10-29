@@ -1894,7 +1894,7 @@
       }
     }
 
-    var mapAddress = receptionVenue || nikahVenue || getAttr('data-event-address', '');
+    var mapAddress = nikahVenue || receptionVenue || getAttr('data-event-address', '');
     if (!document.getElementById('wed2-nikah-address-text')) {
       setAddressText('wed2-address-text', mapAddress);
     }
